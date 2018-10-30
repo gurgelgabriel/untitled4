@@ -1,0 +1,58 @@
+
+
+speed_car = int(input("car speed"))
+if 50 < speed_car < 70:
+    print("45 dol")
+if 71 < speed_car < 80:
+    print("75 dol")
+if 80 < speed_car:
+    print("150 dol")
+
+
+win_counter = 0
+for x in range(6):
+    result = input("results?")
+    if result == "w":
+        win_counter = win_counter + 1
+
+if win_counter == 6 or win_counter == 5:
+    print("group 1")
+if win_counter== 3 or win_counter == 4:
+    print("group 2")
+if win_counter == 2 or win_counter == 1:
+    print("group 3")
+if win_counter == 0:
+    print("eliminated")
+
+
+grade_1 = int(input("math"))
+grade_2 = int(input("physics"))
+grade_3 = int(input("comp sci"))
+grade_4 = int(input("english"))
+grade_5 = int(input ("gls"))
+grade_s = (grade_1 + grade_2 + grade_3 + grade_4 + grade_5)/5
+print(grade_s)
+if grade_s >= 79.5:
+    print("accepted")
+else:
+    print("failed")
+
+
+
+crates_n = int(input("how many crates you want?"))
+if crates_n == 0:
+    boxes_n = int(input("how may boxes do you want?"))
+    print(boxes_n)
+    price = boxes_n*5
+    print(price)
+    if boxes_n == 0:
+        cookies_n = int(input("how may cookies you want?"))
+        print(cookies_n)
+        price2 = cookies_n*0.5
+        print(price2)
+else:
+        print(crates_n)
+        price3 = crates_n*80
+        print(price3)
+
+

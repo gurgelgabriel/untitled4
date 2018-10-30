@@ -1,0 +1,14 @@
+cookies_n = int(input("cookies number"))
+box_n = (cookies_n - cookies_n % 12)/12
+crates_n = (box_n - box_n % 20)/20
+value_cookies = cookies_n*0.5
+if 240 >= cookies_n >= 12:
+    value_cookies = (cookies_n*0.416) + (cookies_n % 12) * (0.5) - (cookies_n % 12) * (0.416)
+if cookies_n >= 240:
+    value_cookies = (cookies_n*0.33) + (cookies_n % 240) * (0.416) + (cookies_n % 12) * (0.5) - (cookies_n % 240) *(0.33) - (cookies_n % 12) * (0.33)
+
+
+print(cookies_n)
+print(box_n)
+print(crates_n)
+print(value_cookies)

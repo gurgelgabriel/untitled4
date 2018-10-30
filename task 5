@@ -1,0 +1,21 @@
+menu = int(input
+side_1 = int(input("first side"))
+side_2 = int(input("second side"))
+lengh_h = (side_1**2 + side_2**2)**(1/2)
+print(lengh_h)
+
+bill_amount = int(input("whats the bill?"))
+tip_percentage = int(input("whats the percentage?"))
+tip_amount = (bill_amount * (1 + tip_percentage/100)) % bill_amount
+print(tip_amount)
+
+temperature_type = int(input("if you have celcius type 1/ if farenheit type 2?"))
+temperature_magnitu = int(input("whats your temperature magnitude?"))
+if temperature_type == 1:
+    print((temperature_magnitu * 1.8 + 32))
+if temperature_type == 2:
+    print((temperature_magnitu - 32) / 1.8)
+
+
+
+
