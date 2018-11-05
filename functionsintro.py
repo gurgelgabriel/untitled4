@@ -9,5 +9,13 @@ def large_num(a, b, c):
 print(large_num(int(input("num1")), int(input("num2")), int(input("num3"))))
 
 
-def sumdice(dice, numbrolls):
-    value = dice*numbrolls
+import random
+dice = int(input("how many sids you have"))
+rolls = int(input("how many times will you roll"))
+def sumdice(dice, rolls):
+    sum = 0
+    for x in range(1, rolls):
+        sum = sum + random.randint(1, dice)
+    return sum
+
+print(sumdice(1, 5))
