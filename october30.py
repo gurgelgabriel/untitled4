@@ -1,26 +1,26 @@
-def doubleevan():
-    nomad = int(input("press a number"))
-    if nomad % 2 == 1:
-        return "-1"
-    elif nomad % 2 == 0:
-        return (nomad*2)
+def doubleevan():  # defines the function called doubleevan
+    nomad = int(input("press a number"))  # ask you the value you want to give to nomad
+    if nomad % 2 == 1:  # if nomad value divided by 2 have a rest of 1...
+        return "-1"  # in that case the function assume a value of -1
+    elif nomad % 2 == 0:  # if nomad divided by 2 have no rest...
+        return (nomad*2)  # the function will assume a value two times bigger than nomad
 
-print(doubleevan())
+print(doubleevan())  # you end the function
 
 
-def grade_percentage():
-    grade = int(input("your percentage"))
-    if grade <= 50:
-        return "f"
-    if 60 > grade >= 50:
-        return "e"
-    if 60 < grade <= 70:
-        return "d"
-    if 70 < grade <= 80:
-        return "c"
-    if 80 < grade < 90:
-        return "b"
-    if grade >= 90:
-        return "a"
+def grade_percentage():  # fefine the function grade percentage
+    grade = int(input("your percentage"))  # ask you the value you want to give to grade
+    if grade <= 50:  # if grade is equal or smaller then 50...
+        return "f"  # the function assume it value as the statment "f"
+    if 60 >= grade > 50:  # if grade is bigger than 50 and smaller or equal than 60...
+        return "e"  # the function assume it value as the statment "e"
+    if 60 < grade <= 70:  # if grade is bigger than 50 and smaller or equal than 60...
+        return "d"  # the function assume it value as the statment "d"
+    if 70 < grade <= 80:  # if grade is bigger than 50 and smaller or equal than 60...
+        return "c"  # the function assume it value as the statment "c"
+    if 80 < grade < 90:  # if grade is bigger than 50 and smaller or equal than 60...
+        return "b"  # the function assume it value as the statment "b"
+    if grade >= 90:  # if grade is bigger or equal then 90...
+        return "a"  # the function assume it value as the statment "a"
 
 print(grade_percentage())
