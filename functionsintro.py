@@ -1,19 +1,29 @@
-def large_num(a, b, c):  # define the value of the function large num
-    if a > b and a > c:  # in case parameter a is the biggest
-        return a  # The function will assume a value equal to a
-    elif b > a and b > c:  # in case parameter b is the biggest
-        return b  # The function will assume a value equal to a
-    else:  # in case parameter a is the biggest
-        return c  # The function will assume a value equal to a
+# task 6(shopping list)
+print("welcome to task 6")  # print a introduction to the task
+list_2 = []  # creates a list
+print("you need to buy: potatos, apples, bananas, ice cream ")  # print what you need to buy
+list_1 = ["potatos", "apples", "bananas", "ice cream"]  # creates a second list
+while list_1[0] not in list_2 or list_1[1] not in list_2 or list_1[2] not in list_2 or list_1[3] not in list_2:  # creates a while loop until "list" have all those thinks
+    inpu_1 = int(input("press 0 to 3 on the order we post the list for the item you got"))  # ask the user what he got
+    if inpu_1 == 0:  # if the user anserw 0
+        list_2.insert(0, "potatos")  # you add potatos as the first item of the list
+    if inpu_1 == 1:  # if the user anserw 1
+        list_2.insert(1, "apples")  # you add apples as the second item of the list
+    if inpu_1 == 2:  # if the user anserw 2
+        list_2.insert(2, "bananas")   # you add bananas as the third item of the list
+    if inpu_1 == 3:  # if the user anserw 3
+        list_2.insert(3, "ice cream")  # you add ice cream as the fourth item of the list
+    print("you have", list_2)  # print what you have inside the while loop so every time you get somethink you will know what you still need
 
-print(large_num(int(input("num1")), int(input("num2")), int(input("num3"))))  # asks you the values you want to give for each parameter and finish your function
 
 
-import random  # enables you to use random
-def sumdice(dice, rolls):  # define a function called sumduce with the parameters dice and rolls
-    sum = 0  # set variable sum to 0
-    for x in range(1, rolls):  # the number of times you will roll
-        sum = sum + random.randint(1, dice)  # uses the random function to set a new value to sum
-    return sum  # the function will assume a value equal to sum
 
-print(sumdice(int(input("how many times you rolled?")), int(input("how many sides you have?"))))  # ends the function and asks how many sides you have and how many times you rolled
+
+
+
+
+
+
+
+
+
